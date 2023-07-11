@@ -22,6 +22,7 @@ extension UIViewController: UITableViewDataSource{
   public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return dummyData.count
   }
+  
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     if let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as? HistoryTableViewCell {
       let history = dummyData[indexPath.row]

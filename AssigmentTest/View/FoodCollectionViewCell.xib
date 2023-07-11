@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCollectionViewCell" id="gTV-IL-0wX" customClass="FoodCollectionViewCell" customModule="AssigmentTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUc-Yf-GGd">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-o7-70Y">
+                                <rect key="frame" x="25" y="8" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4WJ-Ju-DUf"/>
+                                    <constraint firstAttribute="height" constant="100" id="huz-Ng-73Q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o54-GO-S4C">
+                                <rect key="frame" x="8" y="116" width="134" height="13.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ndv-o7-70Y" firstAttribute="top" secondItem="vUc-Yf-GGd" secondAttribute="top" constant="8" id="19f-G0-YFq"/>
+                            <constraint firstItem="o54-GO-S4C" firstAttribute="top" secondItem="Ndv-o7-70Y" secondAttribute="bottom" constant="8" id="5f3-kP-C8n"/>
+                            <constraint firstItem="o54-GO-S4C" firstAttribute="leading" secondItem="vUc-Yf-GGd" secondAttribute="leading" constant="8" id="AzG-XP-djM"/>
+                            <constraint firstAttribute="width" constant="150" id="Gl2-Bs-YAr"/>
+                            <constraint firstAttribute="height" constant="150" id="Oam-3Z-ue9"/>
+                            <constraint firstItem="Ndv-o7-70Y" firstAttribute="centerX" secondItem="vUc-Yf-GGd" secondAttribute="centerX" id="hyN-08-qBK"/>
+                            <constraint firstAttribute="trailing" secondItem="o54-GO-S4C" secondAttribute="trailing" constant="8" id="xUH-2l-YCB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="vUc-Yf-GGd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7lD-zT-mId"/>
+                <constraint firstItem="vUc-Yf-GGd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GX6-4L-5Kg"/>
+                <constraint firstAttribute="bottom" secondItem="vUc-Yf-GGd" secondAttribute="bottom" id="Gsw-Xb-40t"/>
+                <constraint firstAttribute="trailing" secondItem="vUc-Yf-GGd" secondAttribute="trailing" id="xhb-Bk-bma"/>
+            </constraints>
+            <size key="customSize" width="150" height="150"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="foodImage" destination="Ndv-o7-70Y" id="d4v-Bd-nVi"/>
+                <outlet property="foodTitle" destination="o54-GO-S4C" id="Jzt-TO-mcC"/>
+            </connections>
+            <point key="canvasLocation" x="213.74045801526717" y="54.225352112676056"/>
+        </collectionViewCell>
+    </objects>
+</document>

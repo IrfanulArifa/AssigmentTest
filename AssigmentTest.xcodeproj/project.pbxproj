@@ -16,6 +16,12 @@
 		002BC4442A5857BC00CDA433 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BC4422A5857BC00CDA433 /* HistoryTableViewCell.swift */; };
 		002BC4452A5857BC00CDA433 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002BC4432A5857BC00CDA433 /* HistoryTableViewCell.xib */; };
 		002BC4472A585ABC00CDA433 /* BuildingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BC4462A585ABC00CDA433 /* BuildingModel.swift */; };
+		007851712A5BB871007EA39E /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0078516F2A5BB871007EA39E /* FoodCollectionViewCell.swift */; };
+		007851722A5BB871007EA39E /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007851702A5BB871007EA39E /* FoodCollectionViewCell.xib */; };
+		007851742A5BB8D7007EA39E /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007851732A5BB8D7007EA39E /* FoodModel.swift */; };
+		007851782A5BBE43007EA39E /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007851772A5BBE43007EA39E /* FoodViewController.swift */; };
+		0078517A2A5BDA02007EA39E /* DetailFoodView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007851792A5BDA02007EA39E /* DetailFoodView.storyboard */; };
+		0078517C2A5BDD27007EA39E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0078517B2A5BDD27007EA39E /* DetailViewController.swift */; };
 		00C6A5042A58300B0029D713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6A5032A58300B0029D713 /* AppDelegate.swift */; };
 		00C6A5062A58300B0029D713 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6A5052A58300B0029D713 /* SceneDelegate.swift */; };
 		00C6A5082A58300B0029D713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6A5072A58300B0029D713 /* ViewController.swift */; };
@@ -40,6 +46,12 @@
 		002BC4422A5857BC00CDA433 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		002BC4432A5857BC00CDA433 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		002BC4462A585ABC00CDA433 /* BuildingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingModel.swift; sourceTree = "<group>"; };
+		0078516F2A5BB871007EA39E /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		007851702A5BB871007EA39E /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		007851732A5BB8D7007EA39E /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		007851772A5BBE43007EA39E /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		007851792A5BDA02007EA39E /* DetailFoodView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailFoodView.storyboard; sourceTree = "<group>"; };
+		0078517B2A5BDD27007EA39E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		00C6A5002A58300B0029D713 /* AssigmentTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssigmentTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C6A5032A58300B0029D713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C6A5052A58300B0029D713 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				002BC4462A585ABC00CDA433 /* BuildingModel.swift */,
+				007851732A5BB8D7007EA39E /* FoodModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,13 +123,14 @@
 			isa = PBXGroup;
 			children = (
 				00C6A5092A58300B0029D713 /* Main.storyboard */,
+				002BC43A2A5842EE00CDA433 /* Home.storyboard */,
+				007851792A5BDA02007EA39E /* DetailFoodView.storyboard */,
 				00C6A51E2A5833CF0029D713 /* LoginView.storyboard */,
 				00C6A5222A5836350029D713 /* RegisterView.storyboard */,
 				00C6A50E2A58300C0029D713 /* LaunchScreen.storyboard */,
 				002BC4362A58404D00CDA433 /* ForgotView.storyboard */,
-				002BC43A2A5842EE00CDA433 /* Home.storyboard */,
-				002BC4422A5857BC00CDA433 /* HistoryTableViewCell.swift */,
 				002BC4432A5857BC00CDA433 /* HistoryTableViewCell.xib */,
+				007851702A5BB871007EA39E /* FoodCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +144,10 @@
 				002BC4382A58407900CDA433 /* ForgotViewController.swift */,
 				002BC43C2A5842FB00CDA433 /* HomeViewController.swift */,
 				002BC43E2A58499500CDA433 /* HistoryViewController.swift */,
+				002BC4422A5857BC00CDA433 /* HistoryTableViewCell.swift */,
+				0078516F2A5BB871007EA39E /* FoodCollectionViewCell.swift */,
+				007851772A5BBE43007EA39E /* FoodViewController.swift */,
+				0078517B2A5BDD27007EA39E /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,8 +224,10 @@
 				00C6A5102A58300C0029D713 /* LaunchScreen.storyboard in Resources */,
 				00C6A50D2A58300C0029D713 /* Assets.xcassets in Resources */,
 				002BC4372A58404D00CDA433 /* ForgotView.storyboard in Resources */,
+				0078517A2A5BDA02007EA39E /* DetailFoodView.storyboard in Resources */,
 				00C6A5232A5836350029D713 /* RegisterView.storyboard in Resources */,
 				00C6A50B2A58300B0029D713 /* Main.storyboard in Resources */,
+				007851722A5BB871007EA39E /* FoodCollectionViewCell.xib in Resources */,
 				002BC4452A5857BC00CDA433 /* HistoryTableViewCell.xib in Resources */,
 				00C6A51F2A5833CF0029D713 /* LoginView.storyboard in Resources */,
 			);
@@ -220,14 +240,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007851742A5BB8D7007EA39E /* FoodModel.swift in Sources */,
+				0078517C2A5BDD27007EA39E /* DetailViewController.swift in Sources */,
 				00C6A5212A5833FF0029D713 /* LoginViewController.swift in Sources */,
 				00C6A51D2A5833850029D713 /* UITextFieldExtension.swift in Sources */,
 				002BC4472A585ABC00CDA433 /* BuildingModel.swift in Sources */,
 				00C6A5252A5836420029D713 /* RegisterViewController.swift in Sources */,
 				002BC43F2A58499500CDA433 /* HistoryViewController.swift in Sources */,
 				00C6A5082A58300B0029D713 /* ViewController.swift in Sources */,
+				007851712A5BB871007EA39E /* FoodCollectionViewCell.swift in Sources */,
 				00C6A5042A58300B0029D713 /* AppDelegate.swift in Sources */,
 				002BC4442A5857BC00CDA433 /* HistoryTableViewCell.swift in Sources */,
+				007851782A5BBE43007EA39E /* FoodViewController.swift in Sources */,
 				002BC43D2A5842FB00CDA433 /* HomeViewController.swift in Sources */,
 				002BC4392A58407900CDA433 /* ForgotViewController.swift in Sources */,
 				002BC4412A584CA200CDA433 /* AlertManager.swift in Sources */,

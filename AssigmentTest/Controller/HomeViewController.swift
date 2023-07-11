@@ -9,21 +9,28 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var checkinBtn: UIButton!{
+    didSet{
+      checkinBtn.layer.cornerRadius = checkinBtn.frame.width/2
+      checkinBtn.backgroundColor = UIColor(named: "invalidBtnColor")
+      checkinBtn.titleLabel?.font = UIFont(name: "Helvetica", size: 30)
+      checkinBtn.titleLabel?.textColor = .white
+    }
+  }
+  override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  
+  @IBAction func checkinBtnClicked(_ sender: UIButton) {
+    if checkinBtn.backgroundColor == UIColor(named: "invalidBtnColor"){
+      checkinBtn.setTitle("CHECK IN", for: .normal)
+      checkinBtn.backgroundColor = UIColor(named: "validColor")
+    } else if checkinBtn.backgroundColor == UIColor(named: "validColor"){
+      checkinBtn.setTitle("CHECK OUT", for: .normal)
+      checkinBtn.backgroundColor = UIColor(named: "invalidBtnColor")
     }
-    */
-
+  }
+  
 }
